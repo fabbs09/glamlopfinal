@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <!--LOGO Y MENUS-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="60" width="190" src="image/logo.png" alt="" />
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Inicio</a></li>
+        <li>
+          <a href="#tips">Tips de Belleza</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Rutina de Skincare</a></li>
+            <li><a href="">Maquillaje duradero</a></li>
+            <li><a href="">Cuidado Capilar</a></li>
+          </ul>
+        </li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#boletin">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- ====== INICIO  ====== -->
+    <section class="hero-section">
+      <div class="hero-card">
+        <div class="hero-img">
+          <img src="image/mujer skincare.png" alt="Cuidado de la piel" />
+        </div>
+
+        <div class="hero-content">
+          <h1>¿Lista para tu mejor versión?</h1>
+          <p>
+            Descubre secretos, técnicas y recomendaciones de expertos para
+            cuidar tu piel, potenciar tu belleza natural y sentirte segura todos
+            los días.
+          </p>
+          <button class="btn-hero">Ver consejos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN TIPS DE BELLEZA -->
+    <section class="seccion-productos" id="tips">
+      <h2 class="productos-titulo">Tips de Belleza</h2>
+
+      <div class="productos-grid">
+        <!-- Card 1: Skincare -->
+        <article class="producto-card">
+          <img src="image/skincare.png" alt="Rutina de skincare" />
+          <h3>Skincare</h3>
+          <p>
+            Aprende a limpiar, hidratar y proteger tu piel con rutinas sencillas
+            y productos pensados para tu tipo de piel.
+          </p>
+        </article>
+
+        <!-- Card 2 Maquillaje -->
+        <article class="producto-card">
+          <img src="image/maquillaje.png" alt="Maquillaje" />
+          <h3>Maquillaje</h3>
+          <p>
+            Descubre tips de maquillaje natural, looks de día y noche, y cómo
+            preparar tu piel para que el makeup se vea impecable.
+          </p>
+        </article>
+
+        <!-- Card 3 Cuidado capilar -->
+        <article class="producto-card">
+          <img src="image/cabello.png" alt="Cuidado del cabello" />
+          <h3>Cuidado capilar</h3>
+          <p>
+            Consejos para mantener tu cabello fuerte, brillante y saludable con
+            tratamientos, peinados y productos ideales.
+          </p>
+        </article>
+      </div>
+
+      <div class="productos-boton">
+        <button class="btn-servicios">Ver más tips</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section class="nosotros-glamloop" id="nosotros">
+      <div class="nosotros-container">
+        <!-- COLUMNA IZQUIERDA (TEXTO) -->
+        <div class="nosotros-texto">
+          <div class="icono-corazon">❤</div>
+
+          <h2>¿Quiénes Somos?</h2>
+
+          <p class="nosotros-descripcion">
+            Una comunidad que celebra la belleza real. Creemos en rutinas
+            sencillas, productos seguros y consejos que sí funcionan. En
+            GlamLoop ayudamos a que cada persona descubra su mejor versión,
+            cultivando bienestar, confianza y amor propio desde el cuidado de la
+            piel.
+          </p>
+
+          <p class="nosotros-descripcion">
+            Nuestro propósito es inspirar hábitos saludables, compartir
+            conocimiento confiable y crear un espacio donde puedas aprender,
+            cuidarte y sentirte acompañada en tu camino de belleza consciente.
+          </p>
+        </div>
+
+        <!-- COLUMNA DERECHA (IMAGEN) -->
+        <div class="nosotros-imagen">
+          <img src="image/nosotros.png" alt="Equipo GlamLoop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN BOLETÍN / SUSCRIPCIÓN -->
+    <section class="boletin-glamloop" id="boletin">
+      <div class="boletin-card">
+        <h2>Únete a nuestro boletín</h2>
+        <p>
+          Recibe las últimas noticias, tips de belleza y ofertas exclusivas.
+        </p>
+
+        <a class="boletin-btn" href="subscribirse.html">Suscribirse</a>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="image/logoverngr.png" alt="Logo" class="footer-logo" />
+            <p>GL</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/politicaprivacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="/Documentos/terminosycondiciones.pdf"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>

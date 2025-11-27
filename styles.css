@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*MENU*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.topheader {
+  position: fixed;
+  background-color: #fff8f4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;
+  padding: 0 1.25rem;
+  height: 60px;*/
+  justify-content: flex-start; /* logo + menú van seguidos */
+  padding: 0 3rem; /* empuja todo un poco hacia adentro */
+}
+
+/* mueve GlamLoop un poco a la derecha y sepáralo del menú */
+.logo {
+  margin-right: 4rem; /* espacio entre GlamLoop y el menú */
+}
+/*
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 8rem;
+}*/
+/* menú tipo bloque, como en la referencia */
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  gap: 3rem; /* espacio entre cada opción */
+  margin: 0;
+  padding: 0;
+  /* quita esto si lo tienes:
+     width: 100%;
+     justify-content: space-around;
+     
+  */
+  font-family: "Playfair Display", serif;
+  margin-left: auto;
+}
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  padding: 1rem 0;
+}
+.Menu-Horizontal li a:hover {
+  color: #df9a88;
+}
+.Menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  /**width: 6.25rem;**/
+  background-color: #f1e9e4;
+}
+.Menu-Horizontal li:hover .Menu-vertical {
+  display: block;
+}
+.Menu-vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 1.25rem;
+}
+/*SECCION PRODUCTOS*/
+/* ===== SECCIÓN TIPS DE BELLEZA (PRODUCTOS) ===== */
+.seccion-productos {
+  background-color: #151515; /* fondo oscuro */
+  color: #ffffff;
+  padding: 4rem 4rem 5rem;
+  text-align: center;
+}
+
+.productos-titulo {
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* Contenedor de las 3 tarjetas */
+.productos-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* Cada tarjeta */
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto-card img {
+  width: 100%;
+  max-width: 340px;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.producto-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+
+.producto-card p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  max-width: 320px;
+  color: #e3e3e3;
+}
+
+/* Botón de abajo */
+.productos-boton {
+  margin-top: 3rem;
+}
+
+.btn-servicios {
+  background-color: #ffffff;
+  color: #151515;
+  border: none;
+  padding: 0.9rem 2.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-servicios:hover {
+  background-color: #e3e3e3;
+}
+
+.seccion-perfumes {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-perfum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-perfum-texto {
+  flex: 1;
+  text-align: justify;
+}
+.div-perfum-texto h2 {
+  color: pink;
+  margin-bottom: 0.938rem;
+}
+.div-perfum-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+.div-perfum-video {
+  flex: 1;
+}
+.div-perfum-video iframe {
+  width: 100%;
+  max-width: 31.25rem;
+}
+/*FORMULARIO*/
+.seccion-formmulario {
+  background-color: white;
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.div-cont-formulario {
+  padding: 1.875rem;
+  border: 0.125rem solid black;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  border: 0.063rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+/*input y select*/
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid #99c5c1;
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+
+  border-radius: 0.313rem;
+}
+button {
+  background-color: #99c5c1;
+  color: black;
+  border: 0.063rem solid black;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+
+button.menu-toggle {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: black; /* O el color que prefieras para el icono */
+}
+/*para hoja inicio*/
+/* separador por el header fixed */
+.topheader-spacer {
+  height: 80px; /* la misma altura que tu header */
+}
+
+/* HERO DE INICIO */
+/* ===== HERO ESTILO ELEGANTE ===== */
+.hero-section {
+  background-color: white;
+  padding: 7rem 0 6rem; /* antes era 3rem, ahora 6rem */
+}
+/* El cuadro grande centrado */
+.hero-card {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: stretch; /* antes: center */
+  background-color: #e2d9ca;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: none; /* antes tenía sombra, ahora la quitamos */
+}
+
+/* Imagen lado izquierdo tipo banner */
+.hero-img {
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto lado derecho */
+.hero-content {
+  flex: 1;
+  padding: 3.5rem 4rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  font-family: "Playfair Display", serif;
+  color: #3a312f;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #5c504e;
+  margin-bottom: 2rem;
+}
+
+/* Botón dentro del cuadro */
+.btn-hero {
+  background-color: #3c3533;
+  color: #ffffff;
+  border: none;
+  padding: 0.9rem 2.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-hero:hover {
+  background-color: #24201f;
+}
+
+/* ===== TARJETAS DEBAJO DEL HERO ===== */
+.hero-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 4rem 4rem;
+  background-color: #fff7f4;
+  justify-content: center;
+}
+
+.card-inicio {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  max-width: 360px;
+}
+
+.card-inicio h2 {
+  margin-bottom: 0.7rem;
+  color: #222;
+}
+
+.card-inicio p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* ===== SECCIÓN NOSOTROS – ESTILO YANBAL ===== */
+.nosotros-glamloop {
+  padding: 5rem 3rem;
+  background-color: #fff;
+}
+
+.nosotros-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Texto */
+.nosotros-texto {
+  flex: 1;
+  max-width: 480px;
+  text-align: center;
+}
+
+.icono-corazon {
+  font-size: 2rem;
+  color: black; /* color suave estilo Yanbal */
+  margin-bottom: 0.8rem;
+}
+
+.nosotros-texto h2 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1.2rem;
+  color: #223130;
+}
+
+.nosotros-descripcion {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+/* Imagen */
+.nosotros-imagen {
+  flex: 1.2;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nosotros-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nosotros-imagen {
+    width: 100%;
+  }
+}
+
+/* ===== SECCIÓN BOLETÍN ===== */
+.boletin-glamloop {
+  background-color: #fff7f4; /* mismo fondo suave de tu página */
+  padding: 3rem 1.5rem 4rem;
+}
+
+.boletin-card {
+  max-width: 900px;
+  margin: 0 auto;
+  /* verde agua tipo screenshot */
+  border-radius: 18px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.boletin-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-family: "Playfair Display", serif;
+  color: #222;
+}
+
+.boletin-card p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Botón solo */
+.boletin-btn {
+  background-color: #6aaea3;
+  color: #ffffff;
+  border: none;
+  padding: 0.9rem 2.8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.boletin-btn:hover {
+  filter: brightness(0.95);
+}

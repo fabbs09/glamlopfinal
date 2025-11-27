@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Suscríbete - GlamLoop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!-- LOGO Y MENÚS -->
+    <nav class="topheader">
+      <a href="landinpage.html" class="logo">
+        <img height="60" width="190" src="image/logo.png" alt="GlamLoop" />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li><a href="landinpage.html">Inicio</a></li>
+        <li>
+          <a href="#">Tips de Belleza</a>
+          <ul class="Menu-vertical">
+            <li><a href="#">Rutina de Skincare</a></li>
+            <li><a href="#">Maquillaje duradero</a></li>
+            <li><a href="#">Cuidado Capilar</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer">Nosotros</a></li>
+        <li><a href="#footer">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <div class="topheader-spacer"></div>
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section class="seccion-formmulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Suscripción</h2>
+        <p>Completa tus datos para unirte a GlamLoop</p>
+
+        <form class="formulario">
+          <!-- NOMBRE -->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+              required
+            />
+          </div>
+
+          <!-- PAÍS -->
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+              <option value="">Seleccione un país</option>
+              <option value="Peru">Perú</option>
+              <option value="Brazil">Brasil</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Argentina">Argentina</option>
+            </select>
+          </div>
+
+          <!-- INTERESES -->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Maquillaje"
+                  />Maquillaje</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Skin care"
+                  />Skin care</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Perfumes"
+                  />Cuidado Capilar</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- SEXO -->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="nodecirlo" />Prefiero
+                  no decirlo</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="image/logoverngr.png" alt="Logo" class="footer-logo" />
+            <p>GL</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <a href="#">Términos y Condiciones</a>
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
