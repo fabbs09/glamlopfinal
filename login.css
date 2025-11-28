@@ -3,59 +3,70 @@
 * {
   box-sizing: border-box;
 }
-/* Contenedor principal: Centra el formulario */
+
+/* Fondo general */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  /* Fondo atractivo para la vista de escritorio */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("image/mujer\ skincare.png");
-  padding: 1.25rem; /* 20px de padding */
+    url("image/mujer skincare.png");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
 }
 
-/* La caja del formulario */
-.login-box {
-  background: black;
-  padding: 2.5rem; /* 40px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
-  width: 100%;
-  max-width: 25rem; /* 400px, el ancho máximo */
-  text-align: center;
+/* ---------- TARJETA DIVIDIDA EN DOS ---------- */
+.login-card {
+  display: flex;
+  width: 850px;
+  height: 460px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
 }
 
-.login-box h2 {
-  margin-bottom: 1.5625rem; /* 25px */
+/* ---------- LADO IZQUIERDO: LOGIN ---------- */
+.login-left {
+  width: 50%;
+  padding: 40px;
   color: white;
-  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-left h2 {
+  margin-bottom: 25px;
+  font-size: 1.9rem;
   font-family: "Playfair Display", serif;
 }
 
-/* División para agrupar Label e Input */
+/* INPUTS */
 .input-group {
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .input-group label {
   display: block;
-  margin-bottom: 0.5rem; /* 8px */
-  font-weight: bold;
   color: white;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .input-group input {
   width: 100%;
-  padding: 0.75rem; /* 12px */
+  padding: 12px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 0.3125rem; /* 5px */
   font-size: 1rem;
   transition: border-color 0.3s;
 }
@@ -65,55 +76,69 @@
   outline: none;
 }
 
-/* Estilo del botón */
+/* BOTÓN */
 .login-button {
   width: 100%;
-  padding: 0.75rem; /* 12px */
+  padding: 12px;
   border: none;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 5px;
   background-color: #f1e9e4;
   color: black;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 0.625rem; /* 10px */
+  transition: 0.3s ease;
+  margin-top: 10px;
 }
 
 .login-button:hover {
   background-color: #0e63e2;
 }
 
-/* -------------------------------------- */
-/* MEDIA QUERY: RESPONSIVE MÓVILES */
-/* -------------------------------------- */
+/* ---------- LADO DERECHO: GLAMLOOP ---------- */
+.login-right {
+  width: 50%;
+  background: #f1e9e4;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
 
-/* Estilos aplicados cuando la pantalla mide 600px o menos */
-@media (max-width: 600px) {
-  /* El contenedor principal simula una vista de aplicación */
-  .login-container {
-    padding: 0; /* Quita el padding exterior */
-    background: #fff; /* Fondo blanco liso */
-    align-items: flex-start; /* Mueve el formulario arriba */
-    min-height: auto;
-  }
+.login-right h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+}
 
-  /* La caja del formulario se expande y pierde los adornos de tarjeta */
-  .login-box {
-    padding: 1.5rem; /* 24px de padding interno */
-    margin-top: 2rem; /* 32px de espacio superior */
+.login-right p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+/* -------- RESPONSIVE (MÓVILES) -------- */
+@media (max-width: 700px) {
+  .login-card {
+    flex-direction: column;
     width: 100%;
-    max-width: 100%;
-    box-shadow: none; /* Elimina la sombra */
-    border-radius: 0; /* Elimina el borde redondeado */
-    border: none;
+    height: auto;
   }
 
-  .login-box h2 {
-    font-size: 1.7rem; /* Ajuste sutil del tamaño */
-    text-align: left;
+  .login-left,
+  .login-right {
+    width: 100%;
+    padding: 25px;
   }
 
-  .input-group input {
-    padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
+  .login-right {
+    height: 200px;
+  }
+
+  .login-right h1 {
+    font-size: 2.2rem;
   }
 }

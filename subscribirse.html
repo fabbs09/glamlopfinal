@@ -7,6 +7,7 @@
     <title>Suscríbete - GlamLoop</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
   </head>
   <body>
     <!-- LOGO Y MENÚS -->
@@ -14,17 +15,21 @@
       <a href="landinpage.html" class="logo">
         <img height="60" width="190" src="image/logo.png" alt="GlamLoop" />
       </a>
+
+      <!-- BOTÓN HAMBURGUESA, IGUAL QUE EN LA LANDING -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
       <ul class="Menu-Horizontal">
         <li><a href="landinpage.html">Inicio</a></li>
         <li>
-          <a href="#">Tips de Belleza</a>
+          <a href="landinpage.html#tips">Tips de Belleza</a>
           <ul class="Menu-vertical">
-            <li><a href="#">Rutina de Skincare</a></li>
+            <li><a href="pageskincare.html">Rutina de Skincare</a></li>
             <li><a href="#">Maquillaje duradero</a></li>
             <li><a href="#">Cuidado Capilar</a></li>
           </ul>
         </li>
-        <li><a href="#footer">Nosotros</a></li>
+        <li><a href="landinpage.html#nosotros">Nosotros</a></li>
         <li><a href="#footer">Contáctanos</a></li>
       </ul>
     </nav>
@@ -183,5 +188,6 @@
         </div>
       </footer>
     </section>
+    <script src="menu_toggle.js"></script>
   </body>
 </html>

@@ -448,3 +448,181 @@ button.menu-toggle {
 .boletin-btn:hover {
   filter: brightness(0.95);
 }
+/* ========= BREAKPOINT 1024px (laptop chica / tablet horizontal) ========= */
+@media (max-width: 1024px) {
+  .topheader {
+    padding: 0 2rem;
+  }
+
+  .logo {
+    margin-right: 2rem;
+  }
+
+  .Menu-Horizontal {
+    gap: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-card {
+    margin: 1.5rem auto 0;
+  }
+
+  .nosotros-glamloop {
+    padding: 4rem 2rem;
+  }
+}
+
+/* ========= BREAKPOINT 768px (tablet vertical / celular grande) ========= */
+@media (max-width: 768px) {
+  /* HEADER: logo arriba, menú debajo en fila */
+  .topheader {
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 0;
+    padding: 0.5rem 0;
+  }
+
+  .Menu-Horizontal {
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* HERO: imagen arriba, texto abajo */
+  .hero-section {
+    padding: 6rem 0 4rem;
+  }
+
+  .hero-card {
+    flex-direction: column;
+    margin: 1.5rem auto 0;
+  }
+
+  .hero-content {
+    padding: 2.5rem 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  /* GRID de tips de belleza: 2 columnas */
+  .seccion-productos {
+    padding: 3rem 2rem 4rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Nosotros: columnas en stack */
+  .nosotros-glamloop {
+    padding: 4rem 2rem;
+  }
+
+  .nosotros-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nosotros-texto {
+    max-width: 100%;
+  }
+
+  .boletin-glamloop {
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .boletin-card {
+    padding: 2.2rem 1.8rem;
+  }
+
+  /* Formulario de suscripción */
+  .seccion-formmulario {
+    padding: 2rem 1.5rem;
+  }
+
+  .div-cont-formulario {
+    padding: 1.5rem;
+  }
+}
+
+/* ========= BREAKPOINT 576px (celular normal) ========= */
+@media (max-width: 576px) {
+  /* Header más compacto */
+  .topheader {
+    padding: 0 1rem;
+  }
+
+  .Menu-Horizontal {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .Menu-Horizontal li a {
+    padding: 0.8rem 0;
+  }
+
+  /* HERO */
+  .hero-section {
+    padding-top: 6rem;
+  }
+
+  .hero-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  /* Tips: 1 columna */
+  .seccion-productos {
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Nosotros */
+  .nosotros-glamloop {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .nosotros-texto h2 {
+    font-size: 2rem;
+  }
+
+  .nosotros-descripcion {
+    font-size: 1rem;
+  }
+
+  /* Boletín */
+  .boletin-card h2 {
+    font-size: 1.9rem;
+  }
+
+  .boletin-card p {
+    font-size: 1rem;
+  }
+
+  /* Formulario de subscripción */
+  .div-cont-formulario {
+    max-width: 100%;
+  }
+
+  .formulario label {
+    font-size: 0.95rem;
+  }
+
+  input[type="text"],
+  select {
+    font-size: 0.95rem;
+  }
+}
