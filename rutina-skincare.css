@@ -49,6 +49,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
+  padding-top: 80px;
 }
 
 /* Bloque gris con el texto grande */
@@ -95,12 +96,12 @@ body {
 /* ==============================
    SECCIÓN TIPOS DE PIEL + RUTINA
 ============================== */
-/* SECCIÓN TIPOS DE PIEL + RUTINA (EN COLUMNA) */
+
 .tipo-piel {
   margin-top: 48px;
 }
 
-/* Imagen ocupa todo el ancho del contenido */
+
 .tipo-piel-image img {
   width: 100%;
   max-width: 100%;
@@ -109,7 +110,6 @@ body {
   display: block;
 }
 
-/* Título debajo de la imagen */
 .tipo-piel h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.6rem;
@@ -117,7 +117,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Lista de pasos debajo del título */
 .tipo-piel ol {
   padding-left: 20px;
   font-size: 0.98rem;

@@ -44,6 +44,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
+  padding-top: 80px;
 }
 
 /* Bloque gris con el texto grande */

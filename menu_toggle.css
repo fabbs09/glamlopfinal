@@ -32,5 +32,21 @@
 
   .Menu-Horizontal li {
     border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    position: relative;
+  }
+  .Menu-vertical {
+    position: static;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+
+  /* Por defecto ocultamos el submenú del li que tiene submenú */
+  .Menu-Horizontal li.has-submenu .Menu-vertical {
+    display: none;
+  }
+
+  /* Cuando el li tenga la clase .open, mostramos el submenú */
+  .Menu-Horizontal li.has-submenu.open .Menu-vertical {
+    display: block;
   }
 }
