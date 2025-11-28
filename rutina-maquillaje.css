@@ -1,0 +1,115 @@
+/* ==============================
+   FUENTES
+============================== */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* ==============================
+   RESET BÁSICO
+============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* Contenedor general de la página */
+.mk-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  padding-top: 120px; /* espacio por el header fixed */
+}
+
+/* ==============================
+   HERO: IMAGEN + TITULAR
+============================== */
+.mk-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.mk-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Bloque gris con el texto grande */
+.mk-hero-text {
+  background-color: #f4f2f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 32px;
+  border-radius: 6px;
+}
+
+.mk-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+============================== */
+.mk-content {
+  margin-top: 24px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.mk-content p + p {
+  margin-top: 16px;
+}
+
+.mk-content h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 900px) {
+  .mk-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .mk-hero-text {
+    padding: 32px 24px;
+  }
+
+  .mk-hero-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mk-page {
+    padding: 24px 16px 60px;
+  }
+
+  .mk-hero-title {
+    font-size: 1.6rem;
+  }
+
+  .mk-content h2 {
+    font-size: 1.6rem;
+  }
+}
