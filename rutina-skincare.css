@@ -29,7 +29,7 @@ body {
 }
 @media (max-width: 600px) {
   .sk-page {
-    padding: 90px 16px 60px; /* 90 en vez de 24 para mantener margen por el header */
+    padding: 90px 16px 60px; 
   }
 }
 
@@ -49,7 +49,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
-  padding-top: 80px;
 }
 
 /* Bloque gris con el texto grande */
@@ -100,7 +99,6 @@ body {
 .tipo-piel {
   margin-top: 48px;
 }
-
 
 .tipo-piel-image img {
   width: 100%;

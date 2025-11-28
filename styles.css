@@ -17,13 +17,13 @@ body {
   /*justify-content: space-between;
   padding: 0 1.25rem;
   height: 60px;*/
-  justify-content: flex-start; /* logo + menú van seguidos */
-  padding: 0 3rem; /* empuja todo un poco hacia adentro */
+  justify-content: flex-start; 
+  padding: 0 3rem; 
 }
 
-/* mueve GlamLoop un poco a la derecha y sepáralo del menú */
+
 .logo {
-  margin-right: 4rem; /* espacio entre GlamLoop y el menú */
+  margin-right: 4rem; 
 }
 /*
 .Menu-Horizontal {
@@ -40,11 +40,7 @@ body {
   gap: 3rem; /* espacio entre cada opción */
   margin: 0;
   padding: 0;
-  /* quita esto si lo tienes:
-     width: 100%;
-     justify-content: space-around;
-     
-  */
+
   font-family: "Playfair Display", serif;
   margin-left: auto;
 }
@@ -75,7 +71,7 @@ body {
 /*SECCION PRODUCTOS*/
 /* ===== SECCIÓN TIPS DE BELLEZA (PRODUCTOS) ===== */
 .seccion-productos {
-  background-color: #151515; /* fondo oscuro */
+  background-color: #151515; 
   color: #ffffff;
   padding: 4rem 4rem 5rem;
   text-align: center;
@@ -237,12 +233,12 @@ button.menu-toggle {
   background: none !important;
   border: none !important;
   padding: 0 !important;
-  color: black; /* O el color que prefieras para el icono */
+  color: black; 
 }
 /*para hoja inicio*/
-/* separador por el header fixed */
+
 .topheader-spacer {
-  height: 80px; /* la misma altura que tu header */
+  height: 80px; 
 }
 
 /* HERO DE INICIO */
@@ -340,7 +336,7 @@ button.menu-toggle {
   color: #555;
 }
 
-/* ===== SECCIÓN NOSOTROS – ESTILO YANBAL ===== */
+/* ===== SECCIÓN NOSOTROS ===== */
 .nosotros-glamloop {
   padding: 5rem 3rem;
   background-color: #fff;
@@ -364,7 +360,7 @@ button.menu-toggle {
 
 .icono-corazon {
   font-size: 2rem;
-  color: black; /* color suave estilo Yanbal */
+  color: black;
   margin-bottom: 0.8rem;
 }
 
@@ -407,7 +403,7 @@ button.menu-toggle {
 
 /* ===== SECCIÓN BOLETÍN ===== */
 .boletin-glamloop {
-  background-color: #fff7f4; /* mismo fondo suave de tu página */
+  background-color: #fff7f4; 
   padding: 3rem 1.5rem 4rem;
 }
 
@@ -448,7 +444,7 @@ button.menu-toggle {
 .boletin-btn:hover {
   filter: brightness(0.95);
 }
-/* ========= BREAKPOINT 1024px (laptop chica / tablet horizontal) ========= */
+/* =========  ========= */
 @media (max-width: 1024px) {
   .topheader {
     padding: 0 2rem;
@@ -473,7 +469,7 @@ button.menu-toggle {
 }
 
 @media (max-width: 768px) {
-  /* HEADER: logo arriba, menú debajo en fila */
+ 
   .topheader {
     padding: 0 1.5rem;
     flex-wrap: wrap;
